@@ -15,24 +15,26 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [{
-			"command": "copyRelativePathPosix",
-			"title": "Copy Relative Path (Posix)"
-		}],
+		"commands": [
+			{
+				"command": "copyRelativePathPosix",
+				"title": "Copy Relative Path (Posix)"
+			}
+		],
 		"menus": {
 			"explorer/context": [
-			  {
-				"command": "copyRelativePathPosix",
-				"group": "6_copypath"
-			  }
+				{
+					"command": "copyRelativePathPosix",
+					"group": "6_copypath"
+				}
 			],
 			"editor/title/context": [
-			  {
-				"command": "copyRelativePathPosix",
-				"group": "1_cutcopypaste"
-			  }
+				{
+					"command": "copyRelativePathPosix",
+					"group": "1_cutcopypaste"
+				}
 			]
-		  }
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "yarn run compile",
@@ -51,5 +53,12 @@
 		"typescript": "^3.3.1",
 		"tslint": "^5.12.1",
 		"vscode-test": "^1.2.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bpasero/copy-path-relative-posix"
+	},
+	"bugs": {
+		"url": "https://github.com/bpasero/copy-path-relative-posix/issues"
 	}
 }
