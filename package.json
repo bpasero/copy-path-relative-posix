@@ -1,7 +1,8 @@
 {
-	"name": "rssowl",
-	"displayName": "copy-relative-path-posix",
+	"name": "copy-relative-path-posix",
+	"displayName": "Copy Relative Path Posix",
 	"description": "This extensions adds a command to copy the workspace relative path of a file using posix path separator (\"/\").",
+	"publisher": "rssowl",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.39.0"
@@ -10,14 +11,28 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"onCommand:copyRelativePathPosix"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [{
-			"command": "extension.helloWorld",
-			"title": "Hello World"
-		}]
+			"command": "copyRelativePathPosix",
+			"title": "Copy Relative Path (Posix)"
+		}],
+		"menus": {
+			"explorer/context": [
+			  {
+				"command": "copyRelativePathPosix",
+				"group": "6_copypath"
+			  }
+			],
+			"editor/title/context": [
+			  {
+				"command": "copyRelativePathPosix",
+				"group": "1_cutcopypaste"
+			  }
+			]
+		  }
 	},
 	"scripts": {
 		"vscode:prepublish": "yarn run compile",
