@@ -52,7 +52,7 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.17.0.tgz#537c61a1df699a8331c79dab2ccc2c8799873c66"
   integrity sha512-wuJwN2KV4tIRz1bu9vq5kSPasJ8IsEjZaP1ZR7KlmdUZvGF/rXy8DmXOVwUD0kAtvtJ7aqMKPqUXC0NUTDbrDg==
 
-"@types/vscode@^1.39.0":
+"@types/vscode@^1.30.0":
   version "1.39.0"
   resolved "https://registry.yarnpkg.com/@types/vscode/-/vscode-1.39.0.tgz#46c257df4833ff4c1e6806f0406a873fb79672dd"
   integrity sha512-rlg0okXDt7NjAyHXbZ2nO1I/VY/8y9w67ltLRrOxXQ46ayvrYZavD4A6zpYrGbs2+ZOEQzcUs+QZOqcVGQIxXQ==
