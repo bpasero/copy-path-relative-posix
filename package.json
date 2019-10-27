@@ -3,10 +3,11 @@
 	"displayName": "Copy Relative Path Posix",
 	"description": "This extensions adds a command to copy the workspace relative path of a file using posix path separator (\"/\").",
 	"publisher": "rssowl",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"engines": {
 		"vscode": "^1.30.0"
 	},
+	"icon": "rssowl.png",
 	"categories": [
 		"Other"
 	],
