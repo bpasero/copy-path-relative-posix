@@ -10,6 +10,10 @@ export function activate(context: vscode.ExtensionContext) {
 			resources = arg2;
 		} else if (arg1) {
 			resources = [arg1];
+		} else {
+			if (vscode.window.activeTextEditor && vscode.window.activeTextEditor.document.uri) {
+				resources = [vscode.window.activeTextEditor.document.uri];
+			}
 		}
 
 		if (resources) {
