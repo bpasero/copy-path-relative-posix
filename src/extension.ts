@@ -47,7 +47,7 @@ function activate(context) {
         if (resources) {
             const paths = [];
             for (const resource of resources) {
-                const path = resource.fsPath
+                const path = resource.fsPath;
                 if (path) {
                     paths.push(isWindows ? path.replace(/\\/g, '/').replace(/\w{1}:/g, '') : path);
                 }
