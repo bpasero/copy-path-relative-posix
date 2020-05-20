@@ -1,9 +1,9 @@
 {
 	"name": "copy-relative-path-posix",
 	"displayName": "Copy Relative Path Posix",
-	"description": "This extensions adds a command to copy the workspace relative path of a file using posix path separator (\"/\").",
+	"description": "This extensions adds a command to copy the workspace absolute or relative path of a file using posix path separator (\"/\").",
 	"publisher": "rssowl",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"engines": {
 		"vscode": "^1.30.0"
 	},
@@ -12,7 +12,8 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:copyRelativePathPosix"
+		"onCommand:copyRelativePathPosix",
+		"onCommand:copyPathPosix"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -20,6 +21,10 @@
 			{
 				"command": "copyRelativePathPosix",
 				"title": "Copy Relative Path (Posix)"
+			},
+			{
+				"command": "copyPathPosix",
+				"title": "Copy Path (Posix)"
 			}
 		],
 		"menus": {
@@ -27,11 +32,19 @@
 				{
 					"command": "copyRelativePathPosix",
 					"group": "6_copypath"
+				},
+				{
+					"command": "copyPathPosix",
+					"group": "6_copypath"
 				}
 			],
 			"editor/title/context": [
 				{
 					"command": "copyRelativePathPosix",
+					"group": "1_cutcopypaste"
+				},
+				{
+					"command": "copyPathPosix",
 					"group": "1_cutcopypaste"
 				}
 			]
@@ -61,5 +74,10 @@
 	},
 	"bugs": {
 		"url": "https://github.com/bpasero/copy-path-relative-posix/issues"
+	},
+	"__metadata": {
+		"id": "7f676214-b14d-4081-b84f-53c4cdc974b2",
+		"publisherId": "580dfc3e-1fa0-4ad4-98e5-ab01a79d5f3e",
+		"publisherDisplayName": "rssowl"
 	}
 }
